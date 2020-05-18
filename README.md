@@ -3,7 +3,7 @@ What's here is the WYSIWYG editor I created recently for the Vamonde content cre
 * Removed the Gallery option. This relied on the Vamonde S3 servers to upload the images and is low impact to the overall structure.
 * Removed error messaging which relied on a notification system built into the Vamonde dashboard.
 * Fixed certain dependency issues while migrating to the most recent version of the autosizing text area.
-* Modified imports and global CSS to match dashboard specs
+* Modified imports and global CSS to match dashboard specs, removed instance of inline style.
 
 The core area you'll want to look at is `/src/postCreation/index.js`, which handles keyboard shortcuts, adding/deleting items, and focusing. `ContentEditor.js` handles rending the appropriate components into the draggable content area.
 
