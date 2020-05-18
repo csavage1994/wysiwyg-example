@@ -1,0 +1,28 @@
+.pi__text {
+  font-family: DIN;
+  width: 100%;
+  padding: 0.5rem;
+  resize: none;
+  border: none;
+  font-size: 1rem;
+  line-height: 1.4;
+  overflow: hidden !important;
+  border-radius: 4px;
+  width: calc(100% - 1rem);
+  min-height: 22px;
+}
+
+.pi__text:hover {
+  border: 2px dashed rgba(0,0,0,0.15);
+  padding: calc(0.5rem - 2px);
+}
+
+.pi__text:focus {
+  border: 2px dashed #cc4b00;
+  outline: none;
+  padding: calc(0.5rem - 2px);
+}
+
+.pi__text > br {
+  user-select: none;
+}

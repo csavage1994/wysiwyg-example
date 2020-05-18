@@ -1,0 +1,31 @@
+
+.pi__video-container {
+  display: flex;
+  width: 100%;
+  border: 2px dashed transparent;
+  justify-content: center;
+}
+
+.pi__video-container:hover {
+  border: 2px dashed rgba(0,0,0,0.15);
+}
+
+.pi__video-container.focused {
+  border: 2px dashed #cc4b00;
+}
+
+.pi__video-container:focus-within {
+  border: 2px dashed #cc4b00;
+  outline: none;
+}
+
+.pi__video-input {
+  border: none;
+  outline: none;
+  background-color: #F1F6F3;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}

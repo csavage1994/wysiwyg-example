@@ -1,0 +1,50 @@
+.pi__quote-wrapper {
+  width: 100%;
+  position: relative;
+  padding: 0.25rem;
+}
+
+.pi__quote {
+  font-family: Georgia;
+  font-style: italic;
+  color: gray;
+  width: 100%;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  resize: none;
+  border: none;
+  font-size: 1rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.pi__quote-wrapper::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  height: calc(100% - 4px);
+  width: 10px;
+  background-color: #cc4b00;
+}
+
+.pi__quote-wrapper:hover {
+  border: 2px dashed rgba(0,0,0,0.15);
+  padding: 2px;
+}
+
+.pi__quote-wrapper:focus-within {
+  border: 2px dashed #cc4b00;
+  padding: 2px;
+  outline: none;
+}
+
+/* .pi__quote-wrapper:focus-within .pi__quote, .pi__quote-wrapper:hover .pi__quote {
+  padding: 6px calc(1.5rem - 2px);
+} */
+
+.pi__text > br {
+  user-select: none;
+}

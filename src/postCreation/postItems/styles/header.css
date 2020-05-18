@@ -1,0 +1,27 @@
+.pi__header {
+  font-family: DIN-Bold;
+  width: 100%;
+  padding: 0.5rem;
+  resize: none;
+  border: none;
+  font-size: 1.618rem;
+  text-align: center;
+  line-height: 2;
+  overflow: hidden !important;
+  border-radius: 4px;
+  width: calc(100% - 1rem);
+  min-height: 52px;
+}
+.pi__header:hover {
+  border: 2px dashed rgba(0,0,0,0.15);
+  padding: calc(0.5rem - 2px);
+}
+
+.pi__header:focus {
+  border: 2px dashed #cc4b00;
+  padding: calc(0.5rem - 2px);
+}
+
+.pi__text > br {
+  user-select: none;
+}

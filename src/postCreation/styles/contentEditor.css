@@ -1,0 +1,113 @@
+.contenteditor__container {
+  background-color: white;
+  flex: 1;
+  padding: 1rem 2rem;
+  padding-bottom: 0;
+  outline: none;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  border: 2px solid rgba(0,0,0,0.15);
+  border-top: none;
+}
+
+.contenteditor__container::-webkit-scrollbar { 
+  display: none; 
+}
+
+.contenteditor__sortable-container {
+  position: relative;
+  min-height: calc(100% - 2rem);
+  cursor: pointer;
+  padding-bottom: 2rem;
+}
+
+.contenteditor__sortable-item {
+  position: relative;
+  display: flex;
+}
+
+.contenteditor__sortable-item:hover .contenteditor__drag-handle,
+.contenteditor__sortable-item:hover .contenteditor__remove-module {
+  opacity: 1;
+}
+
+.contenteditor__remove-module {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  height: 25px;
+  opacity: 0;
+}
+
+.contenteditor__drag-handle {
+  opacity: 0;
+  position: absolute;
+  pointer-events: all; 
+  height: 20px;
+  width: 26px;
+  left: -26px;
+  top: 5px;
+  z-index: 1;
+  background-image: url('../../assets/content_draggable.png');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  cursor: grab;
+}
+
+.contenteditor__add-trigger {
+  height: 0.75rem;
+  width: 100%;
+}
+
+.contenteditor__trigger-button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  vertical-align: top;
+}
+
+.contenteditor__deletion-confirmation-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.contenteditor__deletion-confirmation {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: DIN-Bold;
+  background-color: rgba(57, 59, 75, 0.85);
+  transition: top 0.3s ease, opacity 0.3s ease;
+  color: white;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.contenteditor__deletion-confirmation.visible {
+  top: 0;
+  opacity: 1;
+}
+
+.contenteditor__deletion-confirmation pre {
+  font-family: monospace;
+  background-color: white;
+  padding: 0.25rem 0.5rem;
+  padding-top: 0.5rem;
+  border-radius: 4px;
+  margin: 0 0.5rem;
+  color: black;
+  display: flex;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.5);
+}
