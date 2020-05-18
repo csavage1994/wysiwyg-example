@@ -11,13 +11,13 @@ Other than that, please feel free to email me if there's any questions about the
 
 Bootstrapped with Create React App.
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+Run `npm install` prior to `npm start` to download dependencies
 
-### `npm start`
+### Running
 
-Runs the app in the development mode.<br />
+`npm start` Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
