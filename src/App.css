@@ -152,3 +152,9 @@ border-spacing: 0;
 .App {
   height: 100vh;
 }
+
+.postcreation__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

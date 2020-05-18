@@ -222,7 +222,7 @@ class PostCreator extends Component {
   render() {
     const { selectedType, postContent, focusIndex, stagedDeletionIndex } = this.state;
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', height: '100%', flex: '1', maxHeight: '100vh' }}>
+      <div className="postcreation__container">
         <ContentSelectionHeader selectType={this.updateModuleType} contentType={selectedType} />
         <ContentEditor
           focusIndex={focusIndex}
